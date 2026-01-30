@@ -18,9 +18,11 @@ Comparison with original NVIDIA A10G implementation:
 | Metric | NVIDIA (SFT+GRPO) | Apple Silicon (SFT) | Apple Silicon (GRPO) |
 |--------|-------------------|---------------------|----------------------|
 | Avg Score | 92% | 99.6% | 100.4% |
-| Perfect Queries | 30/30 | 28/30 | 28/30 |
+| Perfect Queries | 30/30 | 28/30 | **29/30** |
 | Hardware | A10G 24GB | Mac Mini M4 | Mac Mini M4 |
 | Cost | ~$2/run | $0 | $0 |
+
+GRPO improved 1 additional query over SFT baseline.
 
 ## Quick Start
 

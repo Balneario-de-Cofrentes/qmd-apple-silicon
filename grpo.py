@@ -32,15 +32,15 @@ CONFIG = {
     "sft_adapter": "adapters/qwen3-3500",
     "output_adapter": "adapters/qwen3-grpo",
     
-    "num_generations": 4,
+    "num_generations": 6,       # More generations for variance
     "max_tokens": 200,
-    "beta": 0.04,
-    "learning_rate": 5e-6,
-    "max_steps": 200,
+    "beta": 0.1,                # Higher KL penalty for stability
+    "learning_rate": 1e-6,      # Lower LR for stability
+    "max_steps": 30,            # Sweet spot
     
     "log_every": 5,
-    "save_every": 50,
-    "eval_every": 50,
+    "save_every": 10,           # Save more frequently
+    "eval_every": 30,           # Eval at end
 }
 
 TRAINING_QUERIES = [
