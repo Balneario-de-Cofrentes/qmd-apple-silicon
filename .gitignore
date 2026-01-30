@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# MLX models and adapters (too large for git)
+models/
+adapters/
+
+# Logs
+*.log
+
+# Eval outputs
+eval_*.json
+
+# Data (can be regenerated)
+data/
+
+# IDE
+.idea/
+.vscode/
+*.swp
